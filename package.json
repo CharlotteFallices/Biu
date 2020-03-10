@@ -1,0 +1,26 @@
+{
+  "name": "biu",
+  "version": "1.1.2",
+  "description": "biu",
+  "main": "biu.xcodeproj",
+  "scripts": {
+    "test": "null"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mikubill/Biu.git"
+  },
+  "keywords": [
+    "biu"
+  ],
+  "author": "Mikubill",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mikubill/Biu/issues"
+  },
+  "homepage": "https://github.com/Mikubill/Biu#readme",
+  "dependencies": {
+    "gitmoji-cli": "^3.2.1",
+    "inquirer": "^6.5.2"
+  }
+}

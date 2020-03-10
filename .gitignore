@@ -6,3 +6,10 @@ Carthage/*
 Biu.plist
 */Biu.plist
 **/Biu.plist
+*/node_modules
+lamofire.framework.dSYM
+Cache.framework.dSYM
+Kingfisher.framework.dSYM
+KingfisherSwiftUI.framework.dSYM
+SwiftyJSON.framework.dSYM
+getStart.sh

@@ -7,7 +7,6 @@
 //
 
 import SwiftUI
-
 import KingfisherSwiftUI
 
 struct MiniPlayerView: View {
@@ -16,8 +15,7 @@ struct MiniPlayerView: View {
 
     var body: some View {
         HStack {
-            ImageView(imageURL: "\(Router.biuBaseAPICover)/\(self.state.nowPlaying?.id ?? "0")",
-                width: 50, height: 50, maxWidth: 50, maxHeight: 50)
+            ImageView(imageURL: "\(Router.biuBaseAPICover)/\(self.state.nowPlaying?.id ?? "0")", width: 50, height: 50)
                 .clipShape(Circle())
             VStack {
                 if !self.state.radioIsLoading {

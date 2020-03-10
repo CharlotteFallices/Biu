@@ -13,28 +13,26 @@ struct LoginView: View {
     @State var showbutton = true
     @State var showreg = false
     @EnvironmentObject var loginhelper: LoginHelper
-    @Environment(\.colorScheme) var colorScheme: ColorScheme
-    
     var strengths = ["汉子", "妹子", "秀吉"]
     @State private var selectedStrength = 0
-    
+
     var body: some View {
         VStack {
-            if !self.showreg {
-                Image(uiImage: UIImage(named: self.colorScheme == .light ? "trans-black" : "trans-white")!)
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 150, height: 150, alignment: .center)
-                    .clipShape(Circle())
-                    .overlay(
-                        Circle().stroke(Color.white, lineWidth: 4))
-                    .shadow(radius: 5)
-                    .padding(Edge.Set.top, 40)
-                    .padding(Edge.Set.bottom, 25)
-                    .padding(10)
-            }
+            //App图标
+            Image(uiImage: UIImage(named: "biu_trans")!)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 150, height: 150, alignment: .center)
+                .clipShape(Circle())
+                .overlay(
+                    Circle().stroke(Color.white, lineWidth: 4))
+                .shadow(radius: 5)
+                .padding(Edge.Set.top, 40)
+                .padding(Edge.Set.bottom, 25)
+                .padding(10)
+
             VStack {
-                
+                //输入邮件
                 TextField("Email", text: $loginhelper.username)
                     .textContentType(.emailAddress)
                     .padding()
@@ -43,43 +41,45 @@ struct LoginView: View {
                             .frame(height: 1.5, alignment: .bottom)
                             .foregroundColor(Color.gray), alignment: .bottom)
                     .padding(10)
-                
+
                 if self.showreg {
-                    SecureField("Password", text: $loginhelper.password)
-                        .padding()
-                        .overlay(
-                            Rectangle()
-                                .frame(height: 1.5, alignment: .bottom)
-                                .foregroundColor(Color.gray), alignment: .bottom)
-                        .padding(10)
-                    
-                    SecureField("Repeat Password", text: $loginhelper.password2)
-                        .padding()
-                        .overlay(
-                            Rectangle()
-                                .frame(height: 1.5, alignment: .bottom)
-                                .foregroundColor(Color.gray), alignment: .bottom)
-                        .padding(10)
-                    
-                    TextField("Name", text: $loginhelper.name)
-                        .padding()
-                        .overlay(
-                            Rectangle()
-                                .frame(height: 1.5, alignment: .bottom)
-                                .foregroundColor(Color.gray), alignment: .bottom)
-                        .padding(10)
-                        .padding(Edge.Set.bottom, 20)
+                    //输入密码
+                        SecureField("Password", text: $loginhelper.password)
+                            .padding()
+                            .overlay(
+                                Rectangle()
+                                    .frame(height: 1.5, alignment: .bottom)
+                                    .foregroundColor(Color.gray), alignment: .bottom)
+                            .padding(10)
+                        //j重复输入密码
+                        SecureField("Repeat Password", text: $loginhelper.password2)
+                            .padding()
+                            .overlay(
+                                Rectangle()
+                                    .frame(height: 1.5, alignment: .bottom)
+                                    .foregroundColor(Color.gray), alignment: .bottom)
+                            .padding(10)
+                        //输入用户名
+                        TextField("Name", text: $loginhelper.name)
+                            .padding()
+                            .overlay(
+                                Rectangle()
+                                    .frame(height: 1.5, alignment: .bottom)
+                                    .foregroundColor(Color.gray), alignment: .bottom)
+                            .padding(10)
+                    .padding(Edge.Set.bottom, 20)
                 } else {
-                    SecureField("Password", text: $loginhelper.password, onCommit: commit)
-                        .padding()
-                        .overlay(
-                            Rectangle()
-                                .frame(height: 1.0, alignment: .bottom)
-                                .foregroundColor(Color.gray), alignment: .bottom)
-                        .padding(10)
-                        .padding(Edge.Set.bottom, 30)
+                        //输入密码
+                        SecureField("Password", text: $loginhelper.password, onCommit: commit)
+                            .padding()
+                            .overlay(
+                                Rectangle()
+                                    .frame(height: 1.0, alignment: .bottom)
+                                    .foregroundColor(Color.gray), alignment: .bottom)
+                            .padding(10)
+                            .padding(Edge.Set.bottom, 40)
                 }
-                
+
                 Button(action: {
                     self.commit()
                 }) {
@@ -87,38 +87,41 @@ struct LoginView: View {
                         ActivityIndicator(style: .large)
                             .frame(width: 55, height: 55)
                     } else {
+                        //显示下一步标志(一个被圈起来的向右箭头)
                         Image(systemName: "arrow.right.circle")
-                            //                            .renderingMode(.original)
+                            .renderingMode(.original)
                             .resizable()
                             .font(Font.title.weight(.ultraLight))
-                            .foregroundColor(self.colorScheme == .light ? .black : .white)
                             .aspectRatio(contentMode: .fit)
-                            .frame(width: 45, height: 45)
+                            .frame(width: 55, height: 55)
                     }
                 }
                 .disabled(self.loginhelper.signing)
-                
+                //我也不知道这是个啥
                 Spacer()
                     .frame(width: 15, alignment: .center)
-                
+                //注册/登录切换按钮
                 Button(action: {
-                    
+
                     withAnimation(.easeInOut(duration: 0.5)) { self.showreg.toggle() } }) {
-                        if self.showreg {
-                            Text("Return to Login")
-                        } else {
-                            Text("Sign up")
-                        }
+                    if self.showreg {
+                        Text("Return to Login")
+                    } else {
+                        Text("Sign up, If you're new!")
+                    }
                 }
                 .disabled(self.loginhelper.signing)
-                
+                //或许是那个密码错误的提示吧
                 Text(self.loginhelper.answer)
                     .font(.headline)
-                    .padding()
-                
+                    .padding(25)
+
             }
         }
-        .onDisappear(){
+        //在推出的过程中获取JSON
+        .onDisappear(){ //inita的类型Initialization在翻译的时候为什么会被标上罗马音......
+            //in･ì･tial･i･zá･tion
+            //大概是初始化的意思的说
             self.inita.getJsonData()
         }
         .padding(20)
@@ -134,10 +137,11 @@ struct LoginView: View {
         //        }
     }
     
-    
+
     func commit() {
         UIApplication.shared.endEditing()
         self.loginhelper.answer = "正在请求数据..."
+        //reg?|redʒ|的话......注册的意思嘛
         if self.showreg {
             self.loginhelper.signup()
         } else {
@@ -148,6 +152,6 @@ struct LoginView: View {
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView()
+        LoginView()//这不是个struct嘛???怎么成func了QAQ
     }
 }

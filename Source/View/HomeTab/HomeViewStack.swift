@@ -47,8 +47,6 @@ struct HomeViewStack: View {
                     }
                 }
                 .frame(width: 110, height: 140)
-                .padding(.trailing)
-                
             }
         }
 

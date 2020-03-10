@@ -8,8 +8,6 @@
 
 import SwiftUI
 
-import KingfisherSwiftUI
-
 struct CollectionListView: View {
 
     @EnvironmentObject var state: AppState

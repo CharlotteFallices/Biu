@@ -17,8 +17,6 @@ struct ImageView: View {
     var imageURL: String = "https://web.biu.moe/Public/Lcover/0/4860.jpeg"
     var width: CGFloat = 150
     var height: CGFloat = 150
-    var maxWidth: CGFloat? = nil
-    var maxHeight: CGFloat? = nil
     var alignment: Alignment = .center
     
     @State var done = false
@@ -32,7 +30,7 @@ struct ImageView: View {
             options: [
                 .transition(.fade(0.2)),
                 .processor(DownsamplingImageProcessor(size: CGSize(width: self.width, height: self.height))),
-//                .processor(RoundCornerImageProcessor(cornerRadius: 10)),
+                .processor(RoundCornerImageProcessor(cornerRadius: 10)),
                 .scaleFactor(UIScreen.main.scale),
                 .cacheOriginalImage
         ])
@@ -57,7 +55,7 @@ struct ImageView: View {
         .resizable()
         .aspectRatio(contentMode: .fit)
         .scaledToFit()
-        .frame(idealWidth: width, maxWidth: maxWidth, idealHeight: height, maxHeight: maxHeight, alignment: .center)
+        .frame(width: width, height: height, alignment: .center)
         .opacity(done || alreadyCached ? 1.0 : 0.3)
         .animation(.linear(duration: 0.4))
         .cornerRadius(5)

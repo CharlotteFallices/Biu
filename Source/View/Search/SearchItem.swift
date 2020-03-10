@@ -7,7 +7,7 @@
 //
 
 import SwiftUI
-import KingfisherSwiftUI
+//import KingfisherSwiftUI
 
 struct SearchItem: View {
     @EnvironmentObject var state: AppState

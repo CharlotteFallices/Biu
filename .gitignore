@@ -14,3 +14,4 @@ KingfisherSwiftUI.framework.dSYM
 SwiftyJSON.framework.dSYM
 getStart.sh
 node_modules
+package-lock.json

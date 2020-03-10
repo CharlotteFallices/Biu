@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -38,7 +38,6 @@
 		DA29502A234207E90097E5C9 /* RequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA295029234207E90097E5C9 /* RequestHandler.swift */; };
 		DA436688240A080E00D5FE9F /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA436687240A080E00D5FE9F /* ImageView.swift */; };
 		DA4C8CBB240B771F00533C88 /* LoginHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4C8CBA240B771F00533C88 /* LoginHelper.swift */; };
-		DA4FA0AC2406C6B800515C50 /* Biu.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA4FA0AB2406C6B800515C50 /* Biu.plist */; };
 		DA583C752340DE6100BA76DC /* PlayerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA583C742340DE6100BA76DC /* PlayerState.swift */; };
 		DA633562233C6FB900A3BF53 /* HomeViewStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA633561233C6FB900A3BF53 /* HomeViewStack.swift */; };
 		DA633564233C7E3C00A3BF53 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA633563233C7E3C00A3BF53 /* PlayerView.swift */; };
@@ -69,16 +68,17 @@
 		DAA72C322405427200091F88 /* SongRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA72C312405427200091F88 /* SongRow.swift */; };
 		DAA72C382405737000091F88 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA72C372405737000091F88 /* StringExtension.swift */; };
 		DAAD994D23449F2600DD7A85 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAD994C23449F2600DD7A85 /* Utils.swift */; };
-		DAB5026F239D47E600D93BC6 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA41B022233DB33E00001554 /* Alamofire.framework */; };
-		DAB50272239D47F100D93BC6 /* Cache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DACB20A8233F1CD900CE10CB /* Cache.framework */; };
-		DAB50274239D480300D93BC6 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA41B01F233DB33E00001554 /* Kingfisher.framework */; };
-		DAB50276239D481400D93BC6 /* KingfisherSwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA41B020233DB33E00001554 /* KingfisherSwiftUI.framework */; };
-		DAB50278239D481D00D93BC6 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA41B021233DB33E00001554 /* SwiftyJSON.framework */; };
 		DACB20A5233F063900CE10CB /* PlayListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACB20A4233F063900CE10CB /* PlayListView.swift */; };
 		DACB20A7233F19FC00CE10CB /* CachePlayItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACB20A6233F19FC00CE10CB /* CachePlayItem.swift */; };
 		DACE9D4A239D5363005CCBD3 /* PlayerNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACE9D49239D5363005CCBD3 /* PlayerNotification.swift */; };
 		DACF002E233FB1C4009C399B /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF002D233FB1C4009C399B /* CollectionView.swift */; };
 		DAE2A34D233E23DD00801A3D /* MiniPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE2A34C233E23DD00801A3D /* MiniPlayerView.swift */; };
+		DCB4AC8324172F0600056BCD /* Biu.plist in Resources */ = {isa = PBXBuildFile; fileRef = DCB4AC8224172F0600056BCD /* Biu.plist */; };
+		DCB4AC89241730E700056BCD /* Kingfisher.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = DCB4AC84241730E700056BCD /* Kingfisher.framework.dSYM */; };
+		DCB4AC8A241730E700056BCD /* Alamofire.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = DCB4AC85241730E700056BCD /* Alamofire.framework.dSYM */; };
+		DCB4AC8B241730E700056BCD /* KingfisherSwiftUI.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = DCB4AC86241730E700056BCD /* KingfisherSwiftUI.framework.dSYM */; };
+		DCB4AC8C241730E700056BCD /* SwiftyJSON.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = DCB4AC87241730E700056BCD /* SwiftyJSON.framework.dSYM */; };
+		DCB4AC8D241730E700056BCD /* Cache.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = DCB4AC88241730E700056BCD /* Cache.framework.dSYM */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -112,13 +112,8 @@
 		DA29502123419A450097E5C9 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		DA2950272341EAEB0097E5C9 /* LoadingIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicator.swift; sourceTree = "<group>"; };
 		DA295029234207E90097E5C9 /* RequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestHandler.swift; sourceTree = "<group>"; };
-		DA41B01F233DB33E00001554 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
-		DA41B020233DB33E00001554 /* KingfisherSwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KingfisherSwiftUI.framework; path = Carthage/Build/iOS/KingfisherSwiftUI.framework; sourceTree = "<group>"; };
-		DA41B021233DB33E00001554 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
-		DA41B022233DB33E00001554 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		DA436687240A080E00D5FE9F /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		DA4C8CBA240B771F00533C88 /* LoginHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginHelper.swift; sourceTree = "<group>"; };
-		DA4FA0AB2406C6B800515C50 /* Biu.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Biu.plist; sourceTree = "<group>"; };
 		DA583C742340DE6100BA76DC /* PlayerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerState.swift; sourceTree = "<group>"; };
 		DA633561233C6FB900A3BF53 /* HomeViewStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewStack.swift; sourceTree = "<group>"; };
 		DA633563233C7E3C00A3BF53 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
@@ -149,18 +144,18 @@
 		DAA72C312405427200091F88 /* SongRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongRow.swift; sourceTree = "<group>"; };
 		DAA72C372405737000091F88 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		DAAD994C23449F2600DD7A85 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
-		DAB5026A239D47BA00D93BC6 /* Cache.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Cache.framework.dSYM; path = Carthage/Build/iOS/Cache.framework.dSYM; sourceTree = "<group>"; };
-		DAB5026B239D47BA00D93BC6 /* KingfisherSwiftUI.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = KingfisherSwiftUI.framework.dSYM; path = Carthage/Build/iOS/KingfisherSwiftUI.framework.dSYM; sourceTree = "<group>"; };
-		DAB5026C239D47BA00D93BC6 /* SwiftyJSON.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = SwiftyJSON.framework.dSYM; path = Carthage/Build/iOS/SwiftyJSON.framework.dSYM; sourceTree = "<group>"; };
-		DAB5026D239D47BA00D93BC6 /* Alamofire.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Alamofire.framework.dSYM; path = Carthage/Build/iOS/Alamofire.framework.dSYM; sourceTree = "<group>"; };
-		DAB5026E239D47BA00D93BC6 /* Kingfisher.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Kingfisher.framework.dSYM; path = Carthage/Build/iOS/Kingfisher.framework.dSYM; sourceTree = "<group>"; };
 		DACB20A3233E64CD00CE10CB /* Biu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Biu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DACB20A4233F063900CE10CB /* PlayListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListView.swift; sourceTree = "<group>"; };
 		DACB20A6233F19FC00CE10CB /* CachePlayItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachePlayItem.swift; sourceTree = "<group>"; };
-		DACB20A8233F1CD900CE10CB /* Cache.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cache.framework; path = Carthage/Build/iOS/Cache.framework; sourceTree = "<group>"; };
 		DACE9D49239D5363005CCBD3 /* PlayerNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerNotification.swift; sourceTree = "<group>"; };
 		DACF002D233FB1C4009C399B /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
 		DAE2A34C233E23DD00801A3D /* MiniPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniPlayerView.swift; sourceTree = "<group>"; };
+		DCB4AC8224172F0600056BCD /* Biu.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Biu.plist; sourceTree = "<group>"; };
+		DCB4AC84241730E700056BCD /* Kingfisher.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = Kingfisher.framework.dSYM; sourceTree = "<group>"; };
+		DCB4AC85241730E700056BCD /* Alamofire.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = Alamofire.framework.dSYM; sourceTree = "<group>"; };
+		DCB4AC86241730E700056BCD /* KingfisherSwiftUI.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = KingfisherSwiftUI.framework.dSYM; sourceTree = "<group>"; };
+		DCB4AC87241730E700056BCD /* SwiftyJSON.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = SwiftyJSON.framework.dSYM; sourceTree = "<group>"; };
+		DCB4AC88241730E700056BCD /* Cache.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = Cache.framework.dSYM; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,11 +163,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAB50276239D481400D93BC6 /* KingfisherSwiftUI.framework in Frameworks */,
-				DAB5026F239D47E600D93BC6 /* Alamofire.framework in Frameworks */,
-				DAB50274239D480300D93BC6 /* Kingfisher.framework in Frameworks */,
-				DAB50272239D47F100D93BC6 /* Cache.framework in Frameworks */,
-				DAB50278239D481D00D93BC6 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,8 +327,13 @@
 			children = (
 				DA154C3223445FDB00290FF2 /* Default-568h@2x.png */,
 				DA1820D3233A79210023E6C8 /* Source */,
-				DA41B01E233DB33D00001554 /* Frameworks */,
 				DACB20A3233E64CD00CE10CB /* Biu.app */,
+				DCB4AC8224172F0600056BCD /* Biu.plist */,
+				DCB4AC85241730E700056BCD /* Alamofire.framework.dSYM */,
+				DCB4AC88241730E700056BCD /* Cache.framework.dSYM */,
+				DCB4AC84241730E700056BCD /* Kingfisher.framework.dSYM */,
+				DCB4AC86241730E700056BCD /* KingfisherSwiftUI.framework.dSYM */,
+				DCB4AC87241730E700056BCD /* SwiftyJSON.framework.dSYM */,
 			);
 			sourceTree = "<group>";
 		};
@@ -353,7 +348,6 @@
 				DA1820DA233A79230023E6C8 /* Assets.xcassets */,
 				DA1820DF233A79230023E6C8 /* LaunchScreen.storyboard */,
 				DA1820E2233A79230023E6C8 /* Info.plist */,
-				DA4FA0AB2406C6B800515C50 /* Biu.plist */,
 				DA1820DC233A79230023E6C8 /* Preview Content */,
 			);
 			path = Source;
@@ -365,23 +359,6 @@
 				DA1820DD233A79230023E6C8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		DA41B01E233DB33D00001554 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				DAB5026D239D47BA00D93BC6 /* Alamofire.framework.dSYM */,
-				DAB5026A239D47BA00D93BC6 /* Cache.framework.dSYM */,
-				DAB5026E239D47BA00D93BC6 /* Kingfisher.framework.dSYM */,
-				DAB5026B239D47BA00D93BC6 /* KingfisherSwiftUI.framework.dSYM */,
-				DAB5026C239D47BA00D93BC6 /* SwiftyJSON.framework.dSYM */,
-				DACB20A8233F1CD900CE10CB /* Cache.framework */,
-				DA41B022233DB33E00001554 /* Alamofire.framework */,
-				DA41B01F233DB33E00001554 /* Kingfisher.framework */,
-				DA41B020233DB33E00001554 /* KingfisherSwiftUI.framework */,
-				DA41B021233DB33E00001554 /* SwiftyJSON.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -423,7 +400,7 @@
 				};
 			};
 			buildConfigurationList = DA1820CC233A79210023E6C8 /* Build configuration list for PBXProject "biu" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -447,8 +424,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA4FA0AC2406C6B800515C50 /* Biu.plist in Resources */,
+				DCB4AC8B241730E700056BCD /* KingfisherSwiftUI.framework.dSYM in Resources */,
+				DCB4AC8D241730E700056BCD /* Cache.framework.dSYM in Resources */,
+				DCB4AC8324172F0600056BCD /* Biu.plist in Resources */,
+				DCB4AC8A241730E700056BCD /* Alamofire.framework.dSYM in Resources */,
+				DCB4AC8C241730E700056BCD /* SwiftyJSON.framework.dSYM in Resources */,
 				DA1820E1233A79230023E6C8 /* LaunchScreen.storyboard in Resources */,
+				DCB4AC89241730E700056BCD /* Kingfisher.framework.dSYM in Resources */,
 				DA154C3323445FDB00290FF2 /* Default-568h@2x.png in Resources */,
 				DA1820DE233A79230023E6C8 /* Preview Assets.xcassets in Resources */,
 				DA1820DB233A79230023E6C8 /* Assets.xcassets in Resources */,
@@ -478,7 +460,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\n#!/bin/bash\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$INFOPLIST_FILE\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"$INFOPLIST_FILE\"\n\n/usr/local/bin/carthage copy-frameworks\n\n# ${PROJECT_DIR}/Carthage/External/Fabric.framework/run\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\n#Print logs\n#set -x\n\n#!/bin/bash\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$INFOPLIST_FILE\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"$INFOPLIST_FILE\"\n\n/usr/local/bin/carthage copy-frameworks\n\n# ${PROJECT_DIR}/Carthage/External/Fabric.framework/run\n\n# SwiftLint\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"error:You must running 'brew install SwiftLint' now!!!\"\n  exit 1\nfi\n\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -569,12 +551,14 @@
 		DA1820E3233A79230023E6C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_MODULES = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
@@ -605,12 +589,13 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_OPTIMIZATION_LEVEL = z;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
@@ -624,18 +609,21 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TAPI_VERIFY_MODE = Pedantic;
 			};
 			name = Debug;
 		};
 		DA1820E4233A79230023E6C8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_MODULES = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
@@ -665,7 +653,9 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = z;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
@@ -678,6 +668,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TAPI_VERIFY_MODE = Pedantic;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -686,16 +677,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CLANG_ADDRESS_SANITIZER_CONTAINER_OVERFLOW = YES;
+				CODE_SIGN_IDENTITY = nil;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 561;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"Source/Preview Content\"";
-				DEVELOPMENT_TEAM = 976LPVAR4Y;
+				DEVELOPMENT_TEAM = nil;
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/iOS/**",
 					"$(PROJECT_DIR)/Carthage/External",
 				);
 				INFOPLIST_FILE = Source/Info.plist;
@@ -716,16 +708,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CLANG_ADDRESS_SANITIZER_CONTAINER_OVERFLOW = YES;
+				CODE_SIGN_IDENTITY = nil;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 561;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"Source/Preview Content\"";
-				DEVELOPMENT_TEAM = 976LPVAR4Y;
+				DEVELOPMENT_TEAM = nil;
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/iOS/**",
 					"$(PROJECT_DIR)/Carthage/External",
 				);
 				INFOPLIST_FILE = Source/Info.plist;
@@ -752,7 +745,7 @@
 				DA1820E4233A79230023E6C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		DA1820E5233A79230023E6C8 /* Build configuration list for PBXNativeTarget "Biu" */ = {
 			isa = XCConfigurationList;
@@ -761,7 +754,7 @@
 				DA1820E7233A79230023E6C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

@@ -6,6 +6,8 @@
 //  Copyright © 2020 Akizuki Hiyako. All rights reserved.
 //
 
+// swiftlint:disable identifier_name
+
 import SwiftUI
 import UIKit
 import struct Kingfisher.DownsamplingImageProcessor
